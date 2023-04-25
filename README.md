@@ -13,11 +13,11 @@ https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/mast
 ## <ins>DO NOT USE THE IMAGES FROM ANY ONLINE SOURCES, TAKE PICTURES ON THE DAY OF THE HACKATHON</ins>
 
 ### <ins>Question 2</ins>
-###### Task 1:
+#### Task 1:
 Download the dataset from repository: 
 This dataset consists of various images containing people at an industrial site
 Implement any person detection model, such as MobileNet, YOLOv3, or YOLOv5, to detect individuals in the images. You can use any programming language of your choice.
-###### Task 2:
+#### Task 2:
 To enhance the performance of your small object detection model, several techniques can be useful. These include capturing higher-resolution images, using a higher input resolution for your model, dividing images into smaller tiles, generating additional data using augmentation methods, and automatically determining model anchors.
 Your task is to divide each image into smaller tiles (you can use 12 tiles- 4x3; they may overlap - check out the example here) and apply your person detection model to each tile separately. Compare the results with and without the implementation of the technique to demonstrate if it has improved the performance of the detection model.
 
