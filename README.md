@@ -10,7 +10,7 @@ Record a video (or share photographs) to show how the calibration setup works.
 You can find the checkerboard pattern here: 
 
 https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/calibration-checkerboard-collection/Checkerboard-A4-30mm-8x6.pdf
-
+## <ins>DO NOT USE THE IMAGES FROM ANY ONLINE SOURCES, TAKE PICTURES ON THE DAY OF THE HACKATHON</ins>
 
 ### <ins>Question 2</ins>
 ###### Task 1:
