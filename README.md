@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/mast
 
 ### <ins>Question 2</ins>
 ###### Task 1:
-Download the dataset from the following Google Drive link: 
+Download the dataset from repository: 
 This dataset consists of various images containing people at an industrial site
 Implement any person detection model, such as MobileNet, YOLOv3, or YOLOv5, to detect individuals in the images. You can use any programming language of your choice.
 ###### Task 2:
