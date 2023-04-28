@@ -1,12 +1,9 @@
 # Import required modules
 import cv2
 import numpy as np
-import os
-import glob
-
 
 # Define the dimensions of checkerboard
-CHECKERBOARD = (6, 9)
+CHECKERBOARD = (6, 8)
 
 
 # stop the iteration when specified
@@ -27,6 +24,9 @@ twodpoints = []
 objectp3d = np.zeros((1, CHECKERBOARD[0]
 					* CHECKERBOARD[1],
 					3), np.float32)
+
+# print(objectp3d)
+
 objectp3d[0, :, :2] = np.mgrid[0:CHECKERBOARD[0],
 							0:CHECKERBOARD[1]].T.reshape(-1, 2)
 prev_img_shape = None
@@ -36,9 +36,13 @@ prev_img_shape = None
 # in a given directory. Since no path is
 # specified, it will take current directory
 # jpg files alone
-images = glob.glob('*.jpg')
+
+images = ["CheckBoard/checkboard_from_pdf.png"]
+
+print(333)
 
 for filename in images:
+	print(filename)
 	image = cv2.imread(filename)
 	grayColor = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
@@ -74,26 +78,26 @@ for filename in images:
 
 cv2.destroyAllWindows()
 
-h, w = image.shape[:2]
+# h, w = image.shape[:2]
 
 
 # Perform camera calibration by
 # passing the value of above found out 3D points (threedpoints)
 # and its corresponding pixel coordinates of the
 # detected corners (twodpoints)
-ret, matrix, distortion, r_vecs, t_vecs = cv2.calibrateCamera(
-	threedpoints, twodpoints, grayColor.shape[::-1], None, None)
+# ret, matrix, distortion, r_vecs, t_vecs = cv2.calibrateCamera(
+# 	threedpoints, twodpoints, grayColor.shape[::-1], None, None)
 
 
 # Displaying required output
-print(" Camera matrix:")
-print(matrix)
+# print(" Camera matrix:")
+# print(matrix)
 
-print("\n Distortion coefficient:")
-print(distortion)
+# print("\n Distortion coefficient:")
+# print(distortion)
 
-print("\n Rotation Vectors:")
-print(r_vecs)
+# print("\n Rotation Vectors:")
+# print(r_vecs)
 
-print("\n Translation Vectors:")
-print(t_vecs)
+# print("\n Translation Vectors:")
+# print(t_vecs)
